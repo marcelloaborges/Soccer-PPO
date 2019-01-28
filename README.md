@@ -1,4 +1,4 @@
-<img src="https://s3.amazonaws.com/video.udacity-data.com/topher/2018/June/5b1ab4b0_banana/banana.gif">
+<img src="https://camo.githubusercontent.com/1471a35ea88bdb4fc0915e31a637cc4295e0771e/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f766964656f2e756461636974792d646174612e636f6d2f746f706865722f323031382f4175677573742f35623831636430355f736f636365722f736f636365722e706e67">
 
 
 # DRL - PPO Algorithm - Soccer Twos
