@@ -7,7 +7,7 @@ Udacity Deep Reinforcement Learning Nanodegree Program
 
 ### Observations:
 - To run the project just execute the <b>main.py</b> file.
-- If you are not using a windows environment, you will need to download the corresponding <b>"Reacher"</b> version for you OS system. Mail me if you need more details about the environment <b>.exe</b> file.
+- If you are not using a windows environment, you will need to download the corresponding <b>"Soccer"</b> version for you OS system. Mail me if you need more details about the environment <b>.exe</b> file.
 - The <b>checkpoint.pth</b> has the expected average score already hit.
 
 

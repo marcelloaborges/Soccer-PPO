@@ -16,7 +16,7 @@ from optimizer import Optimizer
 DEVICE = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 # environment configuration
-env = UnityEnvironment(file_name="../Environments/Soccer_Windows_x86_64/Soccer.exe", no_graphics=False, seed=1)
+env = UnityEnvironment(file_name="Soccer_Windows_x86_64/Soccer.exe", no_graphics=False, seed=1)
 
 # print the brain names
 print(env.brain_names)
