@@ -29,22 +29,22 @@ Udacity Deep Reinforcement Learning Nanodegree Program
 
 
 ## The problem:
-- The task envolves a soccer game with 2 teams, each one having 2 players: 1 striker and one 1 keeper.
-- There is no goal defined for default, so I decided to train againt a random team until my agents archive a score
-of 95 win into 100 games.
+- The task involves a soccer game with 2 teams, each one having 2 players: 1 striker and one 1 keeper.
+- There is no goal defined for default, so I decided to train against a random team until my agents archive a score
+of 95 wins into 100 games.
 - The goalies have 4 actions.
 - The strikers have 6 actions.
 
 ## The solution:
-- The biggest problem in this scenario is to control the exploration vs. explotation rate. I tried approaches
-such as Double DQN with an exponential exploration rating decay as well as the DDPG aproach with prioritized replay experience
-for diversification of the experiences on learning, but I couldn't find the rigth configuration for the hyperparameters
+- The biggest problem in this scenario is to control the exploration vs. exploitation rate. I tried approaches
+such as Double DQN with an exponential exploration rating decay as well as the DDPG approach with prioritized replay experience
+for diversification of the experiences on learning, but I couldn't find the right configuration for the hyperparameters
 that could make the agents converge.
 - So I changed the approach for a PPO strategy since this kind of method is easier to configure and controls the
-exploration very well by itself using probabilistic decisions. After a lot of different implementations I've reached
+exploration very well by itself using probabilistic decisions. After a lot of different implementations, I've reached
 the current solution.
 - There are still some items to improve such as convergence time and multi teams training, but I'm satisfied with
-the current results. On my last test I could archive the goal (95 wins in 100 games) with a little more than 5000 episodes
+the current results. On my last test, I could archive the goal (95 wins in 100 games) with a little more than 5000 episodes
 and I consider that a great result if I look back to all the tries I made before.
 - It was really good for my learning as I had not used PPO approaches at this level before trying this environment and
 for sure the knowledge acquired here will be very relevant for my next projects.
@@ -54,8 +54,8 @@ and it uses mini-batches from the episode experiences after the reward calculati
 the temporal difference discount with monte carlo tree search exploration (in this case the N-Step range is the role episode).
 - For now, I'll try other variations changing when the learning happens and using multi teams for experience gathering.
 I hope I can archive superhuman results with 5000 episodes or less (the agents are good but not super humans with 5000 episodes).
-- One last consideration. To beat a random team looks easier at the beginning, but if you consider that random agents wins 1/3
-of the games and the draw rate of random games is 1/3, the AI has overcome a big challenge reaching 95% win rate. It's incredible
+- One last consideration. To beat a random team looks easier at the beginning, but if you consider that random agents win 1/3
+of the games and the draw rate of random games is 1/3, the AI has overcome a big challenge reaching a 95% win rate. It's incredible
 how a random agent can score with just a few steps.
 
 
